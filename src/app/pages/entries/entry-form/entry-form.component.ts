@@ -29,7 +29,7 @@ export class EntryFormComponent implements OnInit, AfterContentChecked {
   imaskConfig = {
     mask: Number,
     scale: 2,
-    thousandsSeparator: '',
+    thousandsSeparator: '.',
     padFractionalZeros: true,
     normalizeZeros: true,
     radix: ','
