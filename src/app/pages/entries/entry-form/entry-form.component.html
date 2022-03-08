@@ -1,10 +1,6 @@
-<nav class="mb-5">
-  <ol class="breadcrumb">
-    <li class="breadcrumb-item"><a routerLink="/">Home</a>
-    <li class="breadcrumb-item"><a routerLink="/entries">Lançamento</a>
-    <li class="breadcrumb-item active"> {{ pageTitle }}</li>
-  </ol>
-</nav>
+<fns-bread-crumb
+  [items]="[{text: 'Lançamentos', link: '/entries'}, {text: pageTitle}]"
+></fns-bread-crumb>
 
 <div class="row">
   <div class="col-md-10">
