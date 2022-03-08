@@ -1,0 +1,32 @@
+.footer {
+    margin-top: 150px;
+    bottom: 0;
+    left: 0;
+}
+
+.social-network{
+    list-style: none;
+    padding: 0;
+}
+.social-network > li{
+    display: inline;
+    padding: 10px;
+    font-size: 24px;
+}
+
+
+.icoGithub, .icoWhatsapp, .icoLinkedin{
+    color: aliceblue;
+}
+
+.icoGithub:hover{
+    color: #000000;
+}
+
+.icoWhatsapp:hover{
+    color: #0cd82e;
+}
+
+.icoLinkedin:hover{
+    color: #10a5f5;
+}
