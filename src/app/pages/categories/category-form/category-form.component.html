@@ -2,19 +2,19 @@
   [items]="[{text: 'Categorias', link: '/categories'}, {text: pageTitle}]"
 ></fns-bread-crumb>
 
-<div class="row">
-  <div class="col-md">
-    <h1 class="h2 border-left pl-2">
-      {{ pageTitle }}
-    </h1>
-  </div>
+<fns-page-header
+  [page-title]="pageTitle"
+  [show-button]="false"
+></fns-page-header>
 
-  <div class="col-md text-right mb-4">
-    <a routerLink="/categories" class="btn btn-outline-dark">
-      << Voltar
-    </a>
+<div class="row mb-4">
+  <div class="col-md-12">
+      <a routerLink="/categories" class="btn btn-outline-dark btn-md float-right">
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+      </a>
   </div>
 </div>
+
 
 <form [formGroup]="resourceForm" (submit)="submitForm()">
 

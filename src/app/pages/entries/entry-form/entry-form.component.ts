@@ -86,11 +86,11 @@ export class EntryFormComponent extends BaseResourceFormComponent<Entry> impleme
   }
 
   protected creationPageTitle(): string {
-    return "Cadastro de novo lançamento";
+    return "Novo Lançamento";
   }
 
   protected editionPageTitle(): string {
     const resourceName = this.resource.name || "";
-    return "Editando lançamento: " + resourceName;
+    return "Editando: " + resourceName;
   }
 }

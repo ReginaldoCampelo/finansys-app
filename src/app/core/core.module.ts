@@ -7,6 +7,7 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { HttpClientInMemoryWebApiModule } from "angular-in-memory-web-api";
 import { InMemoryDatabase } from "../in-memory-database";
+import { FontAewsomeComponent } from './components/font-aewsome/font-aewsome.component';
 @NgModule({
 
   imports: [
@@ -21,7 +22,8 @@ import { InMemoryDatabase } from "../in-memory-database";
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    FontAewsomeComponent
   ],
-  declarations: []
+  declarations: [FontAewsomeComponent]
 })
 export class CoreModule { }
