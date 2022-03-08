@@ -20,7 +20,7 @@
   </div>
 </div>
 
-<form [formGroup]="categoryForm" (submit)="submitForm()">
+<form [formGroup]="resourceForm" (submit)="submitForm()">
 
   <div class="card">
     <div class="card-header">
@@ -33,9 +33,9 @@
           <label for="name">Nome</label>
           <input type="text" class="form-control" id="name" formControlName="name">
 
-          <div class="text-danger" *ngIf="categoryForm.get('name').invalid && categoryForm.get('name').touched">
-            <div *ngIf="categoryForm.get('name').errors.required">dado obrigatório</div>     
-            <div *ngIf="categoryForm.get('name').errors.minlength">deve ter no minímo 2 caracteres</div>     
+          <div class="text-danger" *ngIf="resourceForm.get('name').invalid && resourceForm.get('name').touched">
+            <div *ngIf="resourceForm.get('name').errors.required">dado obrigatório</div>     
+            <div *ngIf="resourceForm.get('name').errors.minlength">deve ter no minímo 2 caracteres</div>     
           </div>
         </div>
 
@@ -43,9 +43,9 @@
           <label for="description">Descrição</label>
           <input type="description" class="form-control" id="description" formControlName="description">
 
-          <div class="text-danger" *ngIf="categoryForm.get('description').invalid && categoryForm.get('description').touched">
-            <div *ngIf="categoryForm.get('description').errors.required">dado obrigatório</div>     
-            <div *ngIf="categoryForm.get('description').errors.minlength">deve ter no minímo 8 caracteres</div>     
+          <div class="text-danger" *ngIf="resourceForm.get('description').invalid && resourceForm.get('description').touched">
+            <div *ngIf="resourceForm.get('description').errors.required">dado obrigatório</div>     
+            <div *ngIf="resourceForm.get('description').errors.minlength">deve ter no minímo 8 caracteres</div>     
           </div>
         </div>
       </div>
@@ -58,6 +58,6 @@
     <ul> <li *ngFor="let error of serverErrorMessages"> {{ error }} </li> </ul>
   </div>
 
-  <button [disabled]="submittingForm || categoryForm.invalid" type="submit" class="btn btn-outline-primary btn-lg mt-3 float-right">Salvar</button>
+  <button [disabled]="submittingForm || resourceForm.invalid" type="submit" class="btn btn-outline-primary btn-lg mt-3 float-right">Salvar</button>
 
 </form>
